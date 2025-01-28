@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profils Chess.com</title>
+  <link rel="stylesheet" href="Styles.css">
+  
+</head>
+<body>
+
+    <div class="div-nav">
+        <div class="div-menu">
+            <a href="Home.html"><h3>Accueil</h3></a>
+        </div>
+
+        <div class="div-menu">
+            <a href="Meilleurs joueurs.html"><h3>Meilleurs joueurs</h3></a>
+        </div>
+
+        <div class="div-menu">
+            <a href="Profils Chess.com.html"><h3>Profils Chess.com</h3></a>
+        </div>
+    </div>
+
+    <div class="conteneur">
+        <div class="recherche-joueur">
+
+            <input type="text" placeholder="Entrez un nom d'utilisateur" id="InputFicheJoueur">
+
+            <div class="bouton-fiche-joueur" id="RechercherFicheJoueur">
+
+                <h3>Rechercher</h3>
+
+            </div>
+
+        </div>
+
+        <div class="erreur" id="Erreur">
+            <h3 class="texte-erreur">Cet utilisateur n'existe pas !</h3>
+        </div>
+
+        <div class="fiche-joueur" id="FicheJoueur">
+            <div class="présentation-fiche-joueur">
+
+            <img src="https://images.chesscomfiles.com/uploads/v1/user/160023885.6182b49a.200x200o.4fa265bb8222.png" alt="" height="100px" class="image-fiche-joueur" id="Image">
+
+            <div class="nom-fiche-joueur">
+                <div class="alignement-nom-fiche-joueur">
+                <h2 class="name-username" id="Name"></h2>
+                <h2 class="name-username" id="Username"></h2>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="contenu-fiche-joueur">
+
+                <div id="classement" class="colonne-contenu-fiche-joueur-droite">
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Bullet : </u></h3> <h3 id="Bullet" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Blitz : </u></h3> <h3 id="Blitz" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Mode rapide : </u></h3> <h3 id="Rapide" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Différé : </u></h3> <h3 id="Différé" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Problèmes : </u></h3> <h3 id="Problèmes" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Sprint de problèmes : </u></h3> <h3 id="Sprint" class="texte-contenu-fiche-joueur">-</h3></div>
+                </div>
+
+                <div id="infos" class="colonne-contenu-fiche-joueur-gauche">
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Pays : </u></h3> <h3 id="Pays" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Abonnés : </u></h3> <h3 id="Abonnés" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Ligue : </u></h3> <h3 id="Ligue" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Titre : </u></h3> <h3 id="Titre" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="texte-contenu-fiche-joueur"><u>Classement FIDE : </u></h3> <h3 id="FIDE" class="texte-contenu-fiche-joueur">-</h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="marge"> </h3></div>
+                <div class="texte-contenu-fiche-joueur-ligne"><h3 class="marge"> </h3></div>
+                </div>
+
+                <div class="bouton-chess-fiche-joueur" id="VoirChess"><h3>Voir sur Chess.com</h3></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>

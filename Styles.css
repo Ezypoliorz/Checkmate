@@ -1,0 +1,257 @@
+
+/*Général*/
+    
+  body {
+    background-image: url("Images/Arrière-plan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+  }
+  
+  .div-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color:#262522;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+  .div-menu {
+    width: 200px;
+    height: 45px;
+    text-align: center; 
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: -20px;
+    line-height: 45px;
+    text-align: center;
+
+  }
+
+  .div-menu:hover {
+    background-color: #5d9948;
+
+  }
+
+  .conteneur {
+    width: 100% - 200px;
+    margin-left: 200px;
+    align-items: center;
+
+  }
+
+/*Meilleurs joueurs*/
+
+  .fiche-meilleurs-joueurs {
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: -50px;
+    background-color: #262522;
+    border: 2px solid #5d9948;
+    border-radius: 8px;
+
+  }
+
+  .texte-fiche-meilleurs-joueurs {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-bottom: -20px;
+    text-align: justify;
+
+  }
+
+  .image-fiche-meilleurs-joueurs {
+    z-index: 2;
+    display: flex;
+    margin:  0 auto;
+    margin-top: 12px;
+    margin-bottom: -50px;
+    border: 3px solid #5d9948;
+    border-radius: 50%;
+
+
+  }
+
+/*Profils Chess.com*/
+
+  .fiche-joueur {
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: -50px;
+    background-color: #262522;
+    border: 2px solid #5d9948;
+    border-radius: 8px;
+    display: none;
+
+  }
+
+  .recherche-joueur {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+
+  }
+
+  input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    background-color: #262522;
+    border: 2px solid #5d9948;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 5px;
+    font-size: medium;
+    
+  }
+
+  .bouton-fiche-joueur {
+    transition: 150ms;
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #5d9948;
+    border-radius: 4px;
+    color: #262522;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 5px;
+
+  }
+
+  .bouton-fiche-joueur:hover {
+    transition: 150ms;
+    cursor: pointer;
+    background-color: #72bc57;
+
+  }
+
+  .image-fiche-joueur {
+    border-radius: 50%;
+    border: 2px solid white;
+
+  }
+
+  .présentation-fiche-joueur {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+
+  .nom-fiche-joueur {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .name-username {
+    margin: 10px auto;
+
+  }
+
+  .texte-contenu-fiche-joueur {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+
+  }
+
+  .texte-contenu-fiche-joueur-ligne {
+    display: flex;
+    margin-bottom: -20px;
+
+  }
+
+  .erreur {
+    background-color: #262522;
+    border: 2px solid #b92308;
+    border-radius: 8px;
+    display: none;
+    padding: 10px;
+    transition: 500ms;
+    width: 275px;
+    margin: 10px auto;
+
+  }
+
+  .texte-erreur {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin: 0 auto;
+    margin-left: 10px;
+
+  }
+
+  .colonne-contenu-fiche-joueur-droite {
+    display: inline-block;
+    width: 49%;
+
+  }
+
+  .colonne-contenu-fiche-joueur-gauche {
+    display: inline-block;
+    width: 49%;
+    margin-left: 1%;
+
+  }
+
+  .marge {
+    color: #262522;
+
+  }
+
+  .bouton-chess-fiche-joueur {
+    transition: 150ms;
+    width: 180px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #5d9948;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -15px;
+
+  }
+
+  .bouton-chess-fiche-joueur:hover {
+    transition: 150ms;
+    cursor: pointer;
+    background-color: #72bc57;
+
+  }
