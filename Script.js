@@ -13,7 +13,7 @@ function GetPlayerRatings(player) {
         document.getElementById("Name").textContent = ""
         }
 
-        if (data?.name) {
+        if (data?.username) {
         document.getElementById("Username").textContent = "@"+ data.username
         document.getElementById("FicheJoueur").style.display = 'block';
         JoueurActuel = data.username
