@@ -9,6 +9,14 @@
     background-attachment: fixed;
 
   }
+
+@media (max-width: 767px) {
+
+    .body {
+        background-color: red;
+    }
+    
+}
   
   .div-nav {
     position: fixed;
